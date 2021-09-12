@@ -65,4 +65,12 @@ body {
         display: flex;
         flex-direction: column;
     }
+
+    .nav {
+        display: none;
+    }
+
+    .square-image {
+        filter: none;
+    }
 }

@@ -1,17 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 body {
     font-size: 16px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Lato', sans-serif;
 }
 
 .top-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 1rem;
+    margin: 0 auto;
     width: 95vw;
+}
+
+.logo-wrapper {
+    font-family: Vidaloka;
 }
 
 .nav {
@@ -31,7 +38,7 @@ body {
 
 .nav > li > a:hover {
     text-decoration: underline;
-    text-decoration-thickness: 0.5rem;
+    text-decoration-thickness: 0.4rem;
     text-decoration-color: rgb(255, 124, 1);
 }
 
@@ -41,7 +48,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     width: 95vw;
-    overflow: hidden;
+    
     grid-gap: 0.3rem;
 }
 
@@ -60,6 +67,13 @@ body {
     filter: none;
 }
 
+@media only screen and (max-width: 1000px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+
 @media (orientation: portrait) {
     .gallery {
         display: flex;
@@ -74,3 +88,4 @@ body {
         filter: none;
     }
 }
+
